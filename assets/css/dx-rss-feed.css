@@ -1,0 +1,48 @@
+.dx-rss-feed-wrap .dx-before-text {
+	font-style: oblique;
+	font-weight: bold;
+	padding-right: 10px;
+	border-right: 1px solid #ABABAB;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.dx-rss-feed-wrap ul.feed-list {
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 0 !important;
+	width: 70%
+}
+
+.dx-rss-feed-wrap li.feed-item {
+	font-size: 14px;
+	margin: 0 !important;
+	display: none;
+	padding-left: 10px;
+	vertical-align: middle;
+	margin: 30px;
+	white-space:nowrap;
+	overflow: hidden;
+	width: 100%;
+	animation: type 5s steps(50, end) 1;	
+}
+
+.dx-rss-feed-wrap li.feed-item.active {
+	display: inline-block;
+}
+
+/*start animation*/
+@keyframes type {
+	from{ width: 0;}
+}
+
+.dx-rss-feed-wrap .rss-feed-link {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.dx-rss-feed-wrap .rss-feed-link::after {
+	content: "\f303";
+	font: normal 11px/1 'dashicons';
+}
